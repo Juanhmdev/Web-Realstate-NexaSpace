@@ -195,7 +195,7 @@ header{
         &:hover {
             background-color: var(--black);
             color: white;
-            border: 1px solid white;
+            border: 2px solid white;
          }
         }
     
@@ -380,7 +380,7 @@ header{
 }
 
 // Properties section
-
+// Propiedades de la sección de propiedades
 .properties {
     display: flex;
     flex-direction: column;
@@ -401,7 +401,7 @@ header{
         margin-top: 8px;
     }
 }
-
+// Estilos para Swiper
 .swiper {
     width: 600px;
     height: 300px;
@@ -441,18 +441,18 @@ header{
     padding: 34px;
     margin: 20px 50px;
 }
-
+// Estilos para las propiedades individuales
 .property{ 
     position: relative;
     width: 450px;
     border-radius: 32px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.27);
     transition: all 0.5s ease-in-out;
-
+  // Efecto hover
     &:hover {
         box-shadow: 0 6px 10px rgba(0,0,0,0.602);
     }
-
+// Estilo de la imagen de la propiedad
     & img {
         width: 100%;
         height: auto;
@@ -461,14 +461,15 @@ header{
         border-radius: 32px;
     }
 }
-
+// Estilos para la superposición de las propiedades
 .overlay{
+    // Estilos de superposición...
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 50%;
-    background: linear-gradient(to bottom, transparent, --black);
+    background: linear-gradient(to bottom, transparent, black);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -499,12 +500,155 @@ header{
         margin-top: 0px;
     }
 }
-
+// Estilos para los botones de las propiedades
 .btn-property {
     border: 1px solid white;
     color: white;
     font-weight: 300
 }
+
+// FAQ section
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px;
+}
+
+.faq-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: end;
+
+    & a {
+        text-decoration: none;
+    }
+
+    & h1 {
+        font-size: 48px;
+        font-weight: 500;
+        width: 450px;
+    }
+}
+
+.ask-more {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 16px;
+    border: 1px var(--black) solid;
+    border-radius: 32px;
+    background-color: white;
+    color: var(--black);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--accent);
+        color: white;
+        border: 1px var(--accent) solid;
+    }
+}
+
+.container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.accordion-item {
+    background-color: white;
+    border-radius: 0.4rem;
+    margin-top: 30px;
+
+    & hr {
+        border: 1px solid rgba(255,255,255,0.5);
+    }
+
+}
+
+.accordion-item:hover .accordion-link h3 {
+    transform:translateX(4px) ;
+    color: var(--accent);
+}
+.accordion-link {
+    color: var(--black);
+    text-decoration: none;
+    background-color: white;
+    border-bottom: 1px var(--black) solid;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+    & h3 {
+        font-weight: 500;
+        font-size: 24px;
+        transition: all 0.2s ease-in-out;
+        color: var(--black);
+    }
+
+    & i {
+        color: var(--black);
+        padding: 0.5rem;
+        transition: all 0.5s ease-in-out
+    }
+
+    & ul {
+        display: flex;
+        align-items: flex-end;
+        list-style-type: none;
+        margin-left: 25px;
+    }
+
+    & li {
+        font-size: 10px;
+        color: rgba(255,255,255,0.4);
+        padding: 0 0 1px 5px;
+    }
+
+    & div {
+        display: flex;
+    }
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(-45deg, var(--accent), #89a4f9, #1e4ae8);
+    background-size: 400% 400%;
+
+    & p {
+        color: #fff;
+        font-size: 20px;
+        padding: 2rem;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position:  0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.accordion-item:target .answer {
+    max-width: 20rem;
+}
+
+
+
+
+
+
 
 
 

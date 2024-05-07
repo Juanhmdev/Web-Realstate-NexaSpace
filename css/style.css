@@ -181,7 +181,7 @@ header .btn {
 .btn-transparent:hover {
   background-color: var(--black);
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 .hero-page-imgs {
@@ -426,7 +426,7 @@ header .btn {
   left: 0;
   width: 100%;
   height: 50%;
-  background: linear-gradient(to bottom, transparent, --black);
+  background: linear-gradient(to bottom, transparent, black);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -460,6 +460,130 @@ header .btn {
   border: 1px solid white;
   color: white;
   font-weight: 300;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 100px;
+}
+
+.faq-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: end;
+}
+.faq-header a {
+  text-decoration: none;
+}
+.faq-header h1 {
+  font-size: 48px;
+  font-weight: 500;
+  width: 450px;
+}
+
+.ask-more {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 1px var(--black) solid;
+  border-radius: 32px;
+  background-color: white;
+  color: var(--black);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.ask-more:hover {
+  background-color: var(--accent);
+  color: white;
+  border: 1px var(--accent) solid;
+}
+
+.container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.accordion-item {
+  background-color: white;
+  border-radius: 0.4rem;
+  margin-top: 30px;
+}
+.accordion-item hr {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.accordion-item:hover .accordion-link h3 {
+  transform: translateX(4px);
+  color: var(--accent);
+}
+
+.accordion-link {
+  color: var(--black);
+  text-decoration: none;
+  background-color: white;
+  border-bottom: 1px var(--black) solid;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.accordion-link h3 {
+  font-weight: 500;
+  font-size: 24px;
+  transition: all 0.2s ease-in-out;
+  color: var(--black);
+}
+.accordion-link i {
+  color: var(--black);
+  padding: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.accordion-link ul {
+  display: flex;
+  align-items: flex-end;
+  list-style-type: none;
+  margin-left: 25px;
+}
+.accordion-link li {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0 0 1px 5px;
+}
+.accordion-link div {
+  display: flex;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(-45deg, var(--accent), #89a4f9, #1e4ae8);
+  background-size: 400% 400%;
+}
+.answer p {
+  color: #fff;
+  font-size: 20px;
+  padding: 2rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.accordion-item:target .answer {
+  max-width: 20rem;
 }
 
 /*# sourceMappingURL=style.css.map */
