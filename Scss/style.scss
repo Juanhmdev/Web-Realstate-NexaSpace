@@ -650,6 +650,85 @@ header{
     max-width: 20rem;
 }
 
+// TESTIMONIALS section
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    margin-top: 24px;
+
+    & b {
+        color: var(--accent);
+    }
+
+    & h1 {
+        font-size: 48px;
+    }
+
+    & h6{
+        font-size: 24px;
+        font-weight: 400;
+        opacity: 70%;
+        margin-top: 54px;
+    }
+}
+
+    .testimony {
+        background-color: var(--gray);
+        width: 450px;
+        height: 450px;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+
+        & i {
+            font-size: 64px;
+            margin-bottom: 24px;
+        }
+
+        & p {
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
+    }
+.testimony-people {
+    & p {
+    margin-bottom: 0px;
+    }
+    & span {
+        opacity: 0.7;
+    }
+}
+
+.testimonial-nav {
+    justify-content: space-between;
+    top: 95%;
+}
+
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
+
+
+
+
 
 
 
