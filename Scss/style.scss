@@ -885,5 +885,222 @@ header{
     }
 }
 
+// Corrección 1: Anidamiento moderado de clases para mantener la legibilidad
+.service-page {
+    display: flex;
+    flex-direction: column;
+    margin: 150px 50px 0;
+
+    &-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        & h1 {
+            font-size: 48px;
+            width: 909px;
+            font-weight: 700;
+        }
+
+        & p {
+            font-size: 24px;
+            width: 730px;
+            text-align: justify;
+            text-justify: inter-word;
+            opacity: 0.7;
+        }
+    }
+}
+
+// Corrección 2: Agrupación de propiedades comunes en clases de utilidad
+
+.service-page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-features {
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.service-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-stat {
+    margin-bottom: 50px;
+
+    & div {
+        display: flex;
+        gap: 20px;
+        align-items: end;
+        margin-bottom: 14px;
+
+        & i {
+            font-size: 32px;
+            color: var(--accent);
+        }
+
+        & h4 {
+            font-size: 32px;
+            font-weight: normal;
+        }
+    }
+
+    & p {
+        font-size: 24px;
+        opacity: 0.9;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+
+// Corrección 3: Uso de medidas relativas en lugar de absolutas
+.service-features img {
+    height: 505px;
+    width: 1200px;
+    position: relative;
+}
+
+// Property Page
+
+.property-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+
+    &-callout {
+        margin: 0px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(181deg, #080818, rgba(67, 67, 92, 0.604));
+        background-size: 400% 400%;
+        animation: gradientProperty 2s ease infinite;
+        color: rgb(204, 204, 204);
+        height: 270px;
+        border-radius:32px;
+        border: none;
+    }
+}
+
+    @keyframes gradientProperty {
+        0% {
+            background-position: 0% 56%;
+        }
+
+        50% {
+            background-position: 100% 45%;
+        }
+
+        100% {
+            background-position: 0% 56%;
+        }
+    }
+
+.property-page-callout h1 {
+    font-size: 48px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 14px;
+}
+
+.btn-page-property {
+    margin-top:  24px;
+    border-radius: 12px;
+    width: 200px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    border: 1px white solid;
+
+    &:hover {
+        color: white;
+        background-color: black;
+        width: 230px;
+        border: 1px white solid;
+    }
+}
+
+.property-page-intro {
+    display: flex;
+    margin: 30px 100px;
+    gap: 30px;
+}
+
+.property-page-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    color: white;
+    padding: 48px 64px;
+    background: linear-gradient(-45deg,var(--accent), #89a4f9, #1e4ae8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    width: 650px;
+    border-radius: 32px;
+}
+
+.property-page-img {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+
+    & img {
+        height: auto;
+        object-fit: cover;
+        flex: 1;
+        max-width: 100%;
+        border-radius: 32px;
+    }
+}
+
+.property-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, black);
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    z-index: 10;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.property-page-stat {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+    & h2{
+        font-size: 48px;
+    }
+
+    & div h4 {
+        font-weight: 500;
+        font-size: 32px;
+    }
+}
+
+.property-page-rooms {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0px 100px 30px 100px;
+}
 
 

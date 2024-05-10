@@ -76,3 +76,29 @@ function toggleAccordion(accordionId) {
         arrow.style.transform = "rotate(180deg)";
     }
 }
+
+// index page parallax
+document.addEventListener("DOMContentLoaded", function () {
+    var heroPageImg = document.getElementsByClassName("hero-page-img");
+    var aboutImg = document.getElementsByClassName("about-img");
+    var propertyImg = document.getElementsByClassName("property-img");
+
+    new simpleParallax(heroPageImg, {
+        delay: 0.6,
+        scale: 1.2,
+        transition: "cubic-bezier(0.1,0,0,1)",
+    });
+
+    new simpleParallax(aboutImg, {
+        delay: 0.6,
+        scale: 1.2,
+        transition: "cubic-bezier(0.1,0,0,1)",
+    });
+
+    new simpleParallax(propertyImg, {
+        delay: 0.6,
+        scale: 1.1,
+        orientation: "left",
+        transition: "cubic-bezier(0.1,0,0,1)",
+    });
+});
