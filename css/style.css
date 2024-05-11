@@ -666,6 +666,7 @@ header .btn {
 .testimonial-nav {
   justify-content: space-between;
   top: 95%;
+  margin-top: 0px;
 }
 
 .footer {
