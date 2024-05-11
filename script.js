@@ -102,3 +102,45 @@ document.addEventListener("DOMContentLoaded", function () {
         transition: "cubic-bezier(0.1,0,0,1)",
     });
 });
+
+// scroll reveal
+
+const sr = ScrollReveal({
+    origin: "bottom",
+    distance: "60px",
+    duration: 1000,
+    delay:100,
+    easing: "ease-in-out",
+});
+
+sr.reveal("#hero-slogan");
+sr.reveal("#hero-title", { delay: 400 });
+sr.reveal("#hero-description", { delay: 500 });
+sr.reveal("#hero-btn", { delay: 600 });
+sr.reveal(".hero-page-imgs", { delay: 700 });
+sr.reveal(".collab");
+sr.reveal(".about-imgs");
+sr.reveal(".about-headlines", { delay: 400 });
+sr.reveal("about-projects", { delay: 500 });
+sr.reveal(".services");
+sr.reveal("#properties-title");
+sr.reveal("#properties-description", { delay: 400 });
+sr.reveal(".swiper", { delay: 500 });
+sr.reveal(".faq-header");
+sr.reveal(".property-page");
+sr.reveal(".service-page-title");
+sr.reveal(".service-page-container", { delay: 600 });
+sr.reveal(".contact-headline");
+sr.reveal(".contact-content", { delay: 600 }); 
+
+// FAQ Questions Reveal
+
+const delayIncrement = 100;
+totalQuestions = 5;
+
+for (let i = 1; i <= totalQuestions; i++) {
+    const selector = `#question${i}`;
+    const delay = 400 + (i - 1 ) * delayIncrement;
+
+    sr.reveal(selector, { delay });
+}

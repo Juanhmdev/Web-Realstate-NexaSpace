@@ -126,7 +126,8 @@ header .btn {
   text-align: center;
   text-decoration: none;
   transition: all 0.3s;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
@@ -419,8 +420,8 @@ header .btn {
 }
 
 .swiper {
-  width: 89%;
-  height: 600px;
+  width: 90%;
+  height: 700px;
   padding: 34px;
   margin: 20px 50px 0;
 }
@@ -486,10 +487,6 @@ header .btn {
   border: 1px solid white;
   color: white;
   font-weight: 300;
-}
-
-.swiper-custom-nav {
-  margin-top: 90px;
 }
 
 .faq {
@@ -964,7 +961,8 @@ header .btn {
 }
 .property-page-img img {
   height: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   flex: 1;
   max-width: 100%;
   border-radius: 32px;
@@ -1061,6 +1059,4 @@ header .btn {
 .contact-content img {
   height: 100%;
   width: 600px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

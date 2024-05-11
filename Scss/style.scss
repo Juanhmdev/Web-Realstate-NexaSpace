@@ -17,10 +17,21 @@ body {
 
 section {
     min-width: 100%;
-    min-height: 70vh;
+    min-height: 65vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+#properties-title {
+    margin-top: 100px;
+}
+#faq-title {
+    margin-top: 100px;
+}
+
+#about-title{
+    margin-top: 100px;
 }
 
 // Navbar
@@ -165,11 +176,12 @@ header{
         align-self: center;
     }
 
-    #hero-tittle {
+    #hero-title {
         font-size: 64px;
         width: 1344px;
         margin-bottom: 14px;
         transform: translateZ(0);
+        font-weight: 700;
     }
 
     #hero-description {
@@ -228,7 +240,6 @@ header{
 .about {
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
     justify-content: center;
     gap: 34px;
 }
@@ -249,7 +260,7 @@ header{
 .about-headlines {
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 180px;
 
     & h2 {
         font-size: 48px;
@@ -399,7 +410,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px ;
 
     & h1 {
         font-size: 48px;
@@ -415,10 +425,11 @@ header{
         margin-top: 8px;
     }
 }
+
 // Estilos para Swiper
 .swiper {
     width: 600px;
-    height: 300px;
+    height: 100px;
 }
 
 .swiper-custom-nav {
@@ -450,10 +461,10 @@ header{
 }
 
 .swiper {
-    width: 90%;
-    height: 700px;
+    width: 89%;
+    height: 600px;
     padding: 34px;
-    margin: 20px 50px;
+    margin: 20px 50px 0;
 }
 // Estilos para las propiedades individuales
 .property{ 
@@ -491,7 +502,7 @@ header{
     padding: 24px;
     box-sizing: border-box;
     color: white;
-    border-radius: 32px;
+    border-radius: 0px 0px 30px 30px;
     z-index: 5;
 
     &:hover {
@@ -522,7 +533,11 @@ header{
 .btn-property {
     border: 1px solid white;
     color: white;
-    font-weight: 300
+    font-weight: 300;
+}
+
+.swiper-custom-nav {
+    margin-top: 90px;
 }
 
 // FAQ section
@@ -671,7 +686,8 @@ header{
     flex-direction: column;
     align-items: center;
     height: 700px;
-    margin-top: 24px;
+    margin-top: 90px;
+    margin-bottom: 40px;
 
     & b {
         color: var(--accent);
@@ -1102,5 +1118,68 @@ header{
     gap: 30px;
     margin: 0px 100px 30px 100px;
 }
+
+// contact page
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 120px 100px 0 100px;
+}
+
+.contact-headline {
+    align-self: center;
+    text-align: center;
+
+    & h1 {
+        font-size: 32px;
+    }
+
+    & p {
+        opacity: 0.7;
+    }
+}
+
+.contact-content {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+
+    & form {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        
+        & input {
+            width: 700px;
+            height: 60px;
+            border: none;
+            border-bottom: 1px solid var(--black);
+            font-size: 24px;
+        } 
+        textarea {
+            width: 700px;
+            height: 60px;
+            border: none;
+            border-bottom: 1px solid var(--black);
+            font-size: 24px;
+            height: none;
+        }
+    }   
+}
+
+.contact-content form input:focus,
+.contact-content form textarea:focus {
+    outline: none;
+}
+
+.contact-content img {
+    height: 100%;
+    width: 600px;
+}
+
+
 
 
