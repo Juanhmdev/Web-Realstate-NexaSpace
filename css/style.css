@@ -1063,4 +1063,205 @@ header .btn {
   width: 600px;
 }
 
+@media (max-width: 1024px) and (min-width: 0px) {
+  header {
+    padding: 20px 50px;
+  }
+  header .btn {
+    display: block;
+    color: var(--black);
+  }
+  header .menu {
+    position: fixed;
+    background: var(--accent);
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 50px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+  header .menu:hover {
+    background: black;
+  }
+  header .menu.active {
+    right: 0;
+  }
+  header .menu .close-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    color: white;
+  }
+  header .menu a {
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+    color: white;
+    cursor: pointer;
+  }
+  .btn-visible {
+    display: none;
+  }
+  .hero-page {
+    overflow: hidden;
+  }
+  #hero-title {
+    font-size: 48px;
+    width: 700px;
+  }
+  #hero-description {
+    font-size: 16px;
+    width: 650px;
+  }
+  .btn-heropage {
+    font-size: 16px;
+  }
+  .btn-transparent:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  }
+  .hero-page-imgs {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .hero-page-imgs img {
+    height: 350px;
+    width: 350px;
+  }
+  .collab {
+    height: 160px;
+    gap: 80px;
+    margin-top: 24px;
+  }
+  .collab img {
+    height: 50px;
+    width: 70px;
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-headlines {
+    margin-top: 20px;
+  }
+  .services {
+    align-items: center;
+    text-align: center;
+  }
+  .services p {
+    font-size: 16px;
+  }
+  .services-boxes {
+    flex-direction: column;
+  }
+  .services-box p {
+    font-size: 24px;
+  }
+  #arrow-logo {
+    left: 35%;
+  }
+  .faq {
+    padding: 10px 24px;
+  }
+  .testimonials {
+    text-align: center;
+  }
+  .testimonials h1 {
+    font-size: 32px;
+  }
+  .testimonials h6 {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .contact-callout {
+    padding: 34px 50px;
+  }
+  .contact-callout h4 {
+    font-size: 32px;
+    width: 650px;
+  }
+  .contact-callout p {
+    font-size: 16px;
+  }
+  .footer-nav {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer-links-container {
+    gap: 34px;
+    margin-right: 0px;
+  }
+  .footer-links {
+    padding: 0px 12px;
+  }
+  .footer-links a {
+    font-size: 16px;
+    padding: 0;
+  }
+  .discounts {
+    margin-top: 34px;
+  }
+  .service-page-title h1 {
+    font-size: 24px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 50px;
+  }
+  .service-page-title p {
+    font-size: 16px;
+  }
+  .service-features {
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 30px;
+  }
+  .service-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .property-page {
+    margin-top: 100px;
+  }
+  .property-page-callout {
+    margin: 0px 50px;
+    padding: 50px;
+    text-align: center;
+  }
+  .property-page-callout h1 {
+    font-size: 32px;
+  }
+  .property-page-callout p {
+    opacity: 70%;
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  .btn-page-property {
+    padding: 16px;
+    margin-top: 10px;
+  }
+  .property-page-intro {
+    flex-direction: column;
+    margin: 30px 50px;
+  }
+  .property-page-stats {
+    width: 100%;
+  }
+  .property-page-rooms {
+    margin: 0px 50px 30px 50px;
+  }
+  .property-page-rooms h6 {
+    font-size: 16px;
+  }
+  .contact-content {
+    flex-direction: column;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

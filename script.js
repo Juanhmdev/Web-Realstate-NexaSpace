@@ -131,6 +131,7 @@ sr.reveal(".property-page");
 sr.reveal(".service-page-title");
 sr.reveal(".service-page-container", { delay: 600 });
 sr.reveal(".contact-headline");
+sr.reveal(".testimonials", { delay: 500 });
 sr.reveal(".contact-content", { delay: 600 }); 
 
 // FAQ Questions Reveal
@@ -144,3 +145,19 @@ for (let i = 1; i <= totalQuestions; i++) {
 
     sr.reveal(selector, { delay });
 }
+
+// Evento de cerrar menú al seleccionar una sección
+document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.menu').classList.remove('active');
+    });
+});
+
+// Agregar evento de clic al documento
+document.addEventListener('click', (event) => {
+    // Verificar si el clic no está dentro del menú o del botón de menú
+    if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+        // Si el clic ocurre fuera del menú y del botón de menú, cerrar el menú
+        menu.classList.remove('active');
+    }
+});
