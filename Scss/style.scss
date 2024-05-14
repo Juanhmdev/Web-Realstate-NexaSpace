@@ -1573,7 +1573,7 @@ header{
     }
 
     .swiper-custom-nav {
-        margin-top: 50px;
+        margin-top: 40px;
     }
     #properties-title {
         margin-top: 65px;
@@ -1741,7 +1741,153 @@ header{
         display: flex;
         flex-direction: column;
         align-items: start;
+        & h4 {
+            font-size: 24px;
+        }
+        & p {
+            font-size: 14px;
+            width: 100%;
+            text-align: justify;
+        }
+    }
+    #arrow-logo {
+        left: 80%;
     }
 
-}
+    // Properties Section
+    .properties {
+        margin: 50px 0px;
+        align-items: center;
+        min-height: 100px;
+    & h1 {
+        font-size: 24px;
+    }
+    & p {
+        font-size: 14px;
+    }
+    }
 
+    .property {
+        width: 100%;
+        max-height: 320px;
+        overflow: hidden;
+    &-stats {
+        flex-direction: column;
+        align-items: start;
+        gap: 25px;
+        margin-left: -50px;
+    }
+    }
+    .overlay {
+        padding: 10px;
+        align-items: center;
+    }
+
+    .swiper-custom-nav {
+        top: 314px;
+    }
+    .swiper {
+        height: 380px;
+    }
+    .faq-header {
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+    & h1 {
+        font-size: 24px;
+        width: 250px;
+    }
+    }
+    .ask-more {
+        align-items: center;
+    & p {
+        font-size: 12px;
+    }
+    }
+    .accordion-title h3 {
+        font-size: 16px;
+    }
+    .answer p {
+        font-size: 16px;
+    }
+    .testimonials h6 {
+        font-size: 12px;
+    }
+    .testimony {
+        width: 100%;
+        height: 330px;
+        padding: 24px;
+    & p {
+        font-size: 16px;
+    }
+    }
+    .property-page {
+        align-items: center;
+    }
+    .property-page-callout {
+        margin: 20px 20px 0px 20px;
+        padding: 0px;
+        & h1 {
+            font-size: 24px;
+        }
+        & p {
+            font-size: 12px;
+            width: 100%;
+            padding: 0px 10px;
+        }
+    }
+    .property-page-intro {
+        margin: 20px;
+    }
+    .property-page-stats {
+        width: 100%;
+        padding: 20px 20px;
+    }
+    .property-page-img {
+        width: 100%;
+        height: 100%;
+    }
+    .property-page-rooms {
+        flex-direction: column;
+        margin: 0px 20px 20px 20px;
+    }
+    .service-page-title {
+        flex-direction: column;
+        align-self: center;
+        gap: 0px;
+    & h1 {
+        font-size: 24px;
+        width: 280px;
+        text-align: center;
+        margin: 0px;
+    }
+    & p {
+        font-size: 12px;
+        width: 250x;
+        align-self: center;
+        margin: 5px;
+    }    
+}
+.service-page-container {
+    width: 100%;
+}
+.service-stat div {
+    align-items: center;
+}
+.servive-stat div h4 {
+font-size: 24px;
+}
+.service-stat p {
+    font-size: 16px;
+    opacity: 0.8s;
+}
+.service-features {
+    gap: 10px;
+    margin-top: 14px;
+
+& img {
+    width: 320px;
+    height: 300px;
+}
+}
+}
